@@ -3,7 +3,13 @@
 ## Маркетплейсы
 
 - [skills.sh](https://skills.sh/) — основной каталог навыков для Claude Code
-- [secondsky/claude-skills MARKETPLACE.md](https://github.com/secondsky/claude-skills/blob/main/MARKETPLACE.md) — большой маркетплейс с тематическими пакетами (frontend-skills, testing-skills, ai-skills и др.)
+- [secondsky/claude-skills](https://github.com/secondsky/claude-skills/blob/main/README.md) — большой маркетплейс с тематическими пакетами (frontend-skills, testing-skills, ai-skills и др.)
+
+Подключение в проект (нужно выполнить на каждом устройстве):
+
+```
+/plugin marketplace add https://github.com/secondsky/claude-skills
+```
 
 ---
 

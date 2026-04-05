@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__github__get_file_contents"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "context7",
+    "github"
+  ],
+  "enabledPlugins": {
+    "turborepo@claude-skills": true,
+    "tailwind-v4-shadcn@claude-skills": true
+  }
+}
