@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "jotai-expert": {
+      "source": "s-hiraoku/skills-factory",
+      "sourceType": "github",
+      "computedHash": "dbacd9d458ce2647f51e98dafa01beb374e8027088d73a439af8089e41e7125e"
+    },
+    "tailwind-v4-shadcn": {
+      "source": "secondsky/claude-skills",
+      "sourceType": "github",
+      "computedHash": "dedaff41ff3331cfe9734eee4203a1e85c6a013eec46df83d9c00e3d36e421f9"
+    },
+    "tailwindcss-advanced-layouts": {
+      "source": "josiahsiegel/claude-plugin-marketplace",
+      "sourceType": "github",
+      "computedHash": "fa08c5757b8f24df2d412543d370bc25d8c14eadeb27be4112b2354323f5889f"
+    }
+  }
+}
