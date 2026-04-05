@@ -13,10 +13,10 @@ frontend-agency/
   CONCEPT.md              ← общая концепция агентства
   README.md               ← этот файл
   CLAUDE.md               ← мета-инструкции (точка входа для Claude)
-  skills/
-    architect.md          ← агент-архитектор
-    engineer.md           ← агент-инженер
-    qa.md                 ← агент QA/ревьюер
+  agents/
+    architect.md          ← спецификация агента-архитектора
+    engineer.md           ← спецификация агента-инженера
+    qa.md                 ← спецификация агента QA/ревьюера
   rules/
     base-conventions.md   ← соглашения по коду (язык, именование, типы)
     fsd-structure.md      ← правила FSD-архитектуры
@@ -79,9 +79,9 @@ Claude читает agency CLAUDE.md и на основе `Stack` подгруж
 ## Статус реализации
 
 - [ ] `CLAUDE.md` — мета-инструкции агентства
-- [ ] `skills/architect.md`
-- [ ] `skills/engineer.md`
-- [ ] `skills/qa.md`
+- [ ] `agents/architect.md`
+- [ ] `agents/engineer.md`
+- [ ] `agents/qa.md`
 - [ ] `rules/base-conventions.md`
 - [ ] `rules/fsd-structure.md`
 - [ ] `rules/rest-patterns.md`

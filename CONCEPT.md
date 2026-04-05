@@ -39,7 +39,7 @@
 | Компонентный dev | Storybook 8 | |
 | Роутинг | React Router v7 | |
 
-Выбор стейт-менеджера — pluggable: проект указывает `state: jotai` или `state: zustand`, агент подгружает нужный skill-модуль. По умолчанию Jotai.
+Выбор стейт-менеджера — pluggable: проект указывает `state: jotai` или `state: zustand`, агент подгружает нужный stack-модуль. По умолчанию Jotai.
 
 ---
 
@@ -76,7 +76,7 @@ Figma MCP умеет только читать файлы, не создават
 
 ```
 ~/.claude/CLAUDE.md              ← personal: личные предпочтения, всегда
-project/.claude/agency/CLAUDE.md ← агентство: навыки и правила (submodule)
+project/.claude/agency/CLAUDE.md ← агентство: агенты и правила (submodule)
 project/CLAUDE.md                ← project adapter: стек + контекст проекта
 ```
 
