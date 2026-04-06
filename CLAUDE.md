@@ -40,6 +40,21 @@
 
 ---
 
+## Синхронизация документации
+
+После любого изменения конфига — **в той же операции** обновляй соответствующий `.md`-документ. Документация не должна расходиться с реальным состоянием.
+
+Таблица соответствий:
+
+| Изменён файл | Обновить документ |
+|---|---|
+| `.mcp.json` | `MCP.md` |
+| `skills-lock.json` | `SKILLS.md` |
+| `.claude/settings.json` → `enabledPlugins` | `SKILLS.md` |
+| Агенты (agents/) | `AGENTS.md` (когда появится) |
+
+---
+
 ## MCP: Context7
 
 When working with any library from the project stack — React, TypeScript, TailwindCSS, shadcn/ui, Radix UI, Jotai, TanStack Query, Zod, Vite, Vitest, Testing Library, Storybook, React Router — use Context7 to fetch up-to-date documentation before writing code.

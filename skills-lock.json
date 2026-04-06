@@ -6,11 +6,6 @@
       "sourceType": "github",
       "computedHash": "dbacd9d458ce2647f51e98dafa01beb374e8027088d73a439af8089e41e7125e"
     },
-    "tailwind-v4-shadcn": {
-      "source": "secondsky/claude-skills",
-      "sourceType": "github",
-      "computedHash": "dedaff41ff3331cfe9734eee4203a1e85c6a013eec46df83d9c00e3d36e421f9"
-    },
     "tailwindcss-advanced-layouts": {
       "source": "josiahsiegel/claude-plugin-marketplace",
       "sourceType": "github",

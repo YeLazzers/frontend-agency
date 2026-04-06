@@ -13,13 +13,25 @@
 
 ---
 
-## Установлены
+## Установлены как плагины
+
+Подключены глобально через `.claude/settings.json` → `enabledPlugins`. Управляются командой `/plugin`.
 
 ### tailwind-v4-shadcn
 Архитектура конфига Tailwind v4 + shadcn/ui. CSS-переменные, темы, dark mode, миграция с v3, анти-паттерны.
-- Источник: `secondsky/claude-skills@tailwind-v4-shadcn`
-- Кому: Engineer
-- Путь: `.agents/skills/tailwind-v4-shadcn`
+- Ключ: `tailwind-v4-shadcn@claude-skills`
+- Маркетплейс: `secondsky/claude-skills`
+
+### turborepo
+Monorepo build system: task pipelines, кэширование, remote cache, `--filter`, CI-оптимизация.
+- Ключ: `turborepo@claude-skills`
+- Маркетплейс: `secondsky/claude-skills`
+
+---
+
+## Установлены через skills-lock.json
+
+Установлены локально в `.agents/skills/`. Управляются через `skills-lock.json`.
 
 ### tailwindcss-advanced-layouts
 Сложные лейауты на Tailwind: CSS Grid, Flexbox, Container Queries, sticky/fixed позиционирование, scroll snap.

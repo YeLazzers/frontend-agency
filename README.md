@@ -39,7 +39,7 @@ frontend-agency/
 
 ```bash
 # Добавить агентство как submodule
-git submodule add https://github.com/YeLazzers/frontend-agency .claude/frontend-agency
+git submodule add https://github.com/YeLazzers/frontend-agency frontend-agency
 
 # При клонировании проекта инициализировать
 git submodule update --init
