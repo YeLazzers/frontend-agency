@@ -10,6 +10,11 @@
       "source": "josiahsiegel/claude-plugin-marketplace",
       "sourceType": "github",
       "computedHash": "fa08c5757b8f24df2d412543d370bc25d8c14eadeb27be4112b2354323f5889f"
+    },
+    "turborepo": {
+      "source": "vercel/turborepo",
+      "sourceType": "github",
+      "computedHash": "220fc95054659ca1ee24a000d7e4d4c5d503698e46c1500ceda78290cc6eb799"
     }
   }
 }

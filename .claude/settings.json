@@ -9,7 +9,6 @@
     "github"
   ],
   "enabledPlugins": {
-    "turborepo@claude-skills": true,
-    "tailwind-v4-shadcn@claude-skills": true
+"tailwind-v4-shadcn@claude-skills": true
   }
 }
