@@ -10,9 +10,17 @@
 
 ```
 frontend-agency/
+  .agents/
+    skills/                ← локальные навыки (источник)
+  .claude/
+    settings.json          ← настройки Claude Code
+    skills/                ← symlink-обёртка над .agents/skills
+  .mcp.json                ← MCP-конфиг агентства
   CONCEPT.md              ← общая концепция агентства
   README.md               ← этот файл
   CLAUDE.md               ← мета-инструкции (точка входа для Claude)
+  setup.js                ← связывает agency с проектом через symlink
+  skills-lock.json        ← lock-файл локальных навыков
   agents/
     architect.md          ← спецификация агента-архитектора
     engineer.md           ← спецификация агента-инженера
@@ -48,17 +56,33 @@ git submodule update --init
 git submodule update --remote
 ```
 
+После подключения submodule выполнить:
+
+```bash
+node frontend-agency/setup.js
+```
+
+Скрипт создаёт symlink'и в корне проекта:
+
+- `.claude/settings.json`
+- `.claude/skills`
+- `.claude/skills-lock.json`
+- `.agents/skills`
+- `.mcp.json`
+
+После этого нужно перезапустить Claude Code, чтобы он перечитал конфиг.
+
 ---
 
 ## Настройка проекта (Project Adapter)
 
-В корне проекта создать `CLAUDE.md`:
+В корне проекта создать `CLAUDE.md` или `AGENTS.md`:
 
 ```markdown
 # Project: [Name]
 
 ## Agency
-@.claude/frontend-agency/CLAUDE.md
+@frontend-agency/CLAUDE.md
 
 ## Stack
 state: jotai
@@ -72,7 +96,7 @@ testing: vitest
 - Архитектура: FSD (упрощённый)
 ```
 
-Claude читает agency CLAUDE.md и на основе `Stack` подгружает нужные `stack/*.md` модули.
+Claude Code читает `frontend-agency/CLAUDE.md`, а на основе `Stack` подгружает нужные `stack/*.md` модули.
 
 ---
 

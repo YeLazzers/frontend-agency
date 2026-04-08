@@ -16,6 +16,7 @@ const PROJECT_DIR = join(AGENCY_DIR, '..')
 const LINKS = [
   { src: '.claude/settings.json',  dest: '.claude/settings.json'  },
   { src: '.claude/skills',         dest: '.claude/skills'         },
+  { src: '.agents/skills',         dest: '.agents/skills'         },
   { src: 'skills-lock.json',       dest: '.claude/skills-lock.json' },
   { src: '.mcp.json',              dest: '.mcp.json'              },
 ]

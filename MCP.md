@@ -1,5 +1,7 @@
 # MCP — Инструменты агентства
 
+Конфиг MCP хранится в `frontend-agency/.mcp.json` и пробрасывается в проект через `node frontend-agency/setup.js`.
+
 ## Подключены
 
 ### Context7 (`@upstash/context7-mcp`)

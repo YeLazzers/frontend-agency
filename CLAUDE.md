@@ -53,6 +53,8 @@
 | `.claude/settings.json` → `enabledPlugins` | `SKILLS.md` |
 | Агенты (agents/) | `AGENTS.md` (когда появится) |
 
+Если менялся `setup.js`, обнови документы, описывающие точки входа и симлинки: в первую очередь `README.md`, а при изменении подключаемых навыков или MCP-конфига также `SKILLS.md` и `MCP.md`.
+
 ---
 
 ## MCP: Context7

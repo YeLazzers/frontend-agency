@@ -76,9 +76,11 @@ Figma MCP умеет только читать файлы, не создават
 
 ```
 ~/.claude/CLAUDE.md              ← personal: личные предпочтения, всегда
-project/.claude/agency/CLAUDE.md ← агентство: агенты и правила (submodule)
-project/CLAUDE.md                ← project adapter: стек + контекст проекта
+project/frontend-agency/CLAUDE.md ← агентство: агенты и правила (submodule)
+project/CLAUDE.md или AGENTS.md   ← project adapter: стек + контекст проекта
 ```
+
+`setup.js` не копирует agency-инструкции в `.claude/`. Он линкует runtime-конфиги: `.claude/settings.json`, `.claude/skills`, `.claude/skills-lock.json`, `.agents/skills` и `.mcp.json`.
 
 ---
 

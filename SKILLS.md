@@ -11,27 +11,24 @@
 /plugin marketplace add https://github.com/secondsky/claude-skills
 ```
 
+Локальные навыки агентства хранятся в `frontend-agency/.agents/skills/`. `node frontend-agency/setup.js` пробрасывает их в проект сразу в `.claude/skills` и `.agents/skills`, чтобы их видели разные рантаймы агентов.
+
 ---
 
 ## Установлены как плагины
 
-Подключены глобально через `.claude/settings.json` → `enabledPlugins`. Управляются командой `/plugin`.
+Подключены через `.claude/settings.json` → `enabledPlugins`. Управляются командой `/plugin`.
 
 ### tailwind-v4-shadcn
 Архитектура конфига Tailwind v4 + shadcn/ui. CSS-переменные, темы, dark mode, миграция с v3, анти-паттерны.
 - Ключ: `tailwind-v4-shadcn@claude-skills`
 - Маркетплейс: `secondsky/claude-skills`
 
-### turborepo
-Monorepo build system: task pipelines, кэширование, remote cache, `--filter`, CI-оптимизация.
-- Ключ: `turborepo@claude-skills`
-- Маркетплейс: `secondsky/claude-skills`
-
 ---
 
 ## Установлены через skills-lock.json
 
-Установлены локально в `.agents/skills/`. Управляются через `skills-lock.json`.
+Описаны в `skills-lock.json`, физически лежат в `.agents/skills/`. После `node frontend-agency/setup.js` доступны в проекте и через `.agents/skills/`, и через `.claude/skills/`.
 
 ### tailwindcss-advanced-layouts
 Сложные лейауты на Tailwind: CSS Grid, Flexbox, Container Queries, sticky/fixed позиционирование, scroll snap.
@@ -44,6 +41,12 @@ Monorepo build system: task pipelines, кэширование, remote cache, `--
 - Источник: `s-hiraoku/skills-factory@jotai-expert`
 - Кому: Engineer
 - Путь: `.agents/skills/jotai-expert`
+
+### turborepo
+Monorepo build system: task pipelines, кэширование, remote cache, `--filter`, CI-оптимизация.
+- Источник: `vercel/turborepo`
+- Кому: Architect + Engineer
+- Путь: `.agents/skills/turborepo`
 
 ---
 
