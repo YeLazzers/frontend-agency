@@ -1,6 +1,11 @@
 {
   "version": 1,
   "skills": {
+    "feature-sliced-design": {
+      "source": "feature-sliced/skills",
+      "sourceType": "github",
+      "computedHash": "98020388ca6fb26ac9b060f81eb3064fefce9018e6f660e69419a00adf0801e7"
+    },
     "jotai-expert": {
       "source": "s-hiraoku/skills-factory",
       "sourceType": "github",
@@ -10,6 +15,16 @@
       "source": "orval-labs/orval",
       "sourceType": "github",
       "computedHash": "f843a346b46ef027a50348c38794ebf839db927081ea6ba234a22c49879a0093"
+    },
+    "pixijs-2d": {
+      "source": "freshtechbro/claudedesignskills",
+      "sourceType": "github",
+      "computedHash": "f7bb8d68fd3cad99f0fe3b2c26fceed67983f35d970eee66d35b72d487dd63a5"
+    },
+    "shadcn": {
+      "source": "shadcn/ui",
+      "sourceType": "github",
+      "computedHash": "873c67922d80775a9fdf596db7964b579f0408c30ec6e3d11989f6055bbec89f"
     },
     "tailwindcss-advanced-layouts": {
       "source": "josiahsiegel/claude-plugin-marketplace",
