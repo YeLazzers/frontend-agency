@@ -2,14 +2,14 @@
   "permissions": {
     "allow": [
       "mcp__github__get_file_contents",
-      "mcp__context7__query-docs"
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Skill(shadcn)",
+      "Skill(shadcn:*)",
+      "mcp__figma__get_design_context"
     ]
   },
-  "enabledMcpjsonServers": [
-    "context7",
-    "github"
-  ],
   "enabledPlugins": {
-"tailwind-v4-shadcn@claude-skills": true
+    "tailwind-v4-shadcn@claude-skills": true
   }
 }
